@@ -1,7 +1,7 @@
 # En proceso
 
 ## Estructura del Proyecto
-* `data_cruda/`: Archivos originales inmutables (Serie histórica de la Reserva Federal).
+* `data_cruda/`: Archivos originales inmutables.
 * `data_tratada/`: Bases de datos consolidadas, unificadas temporalmente y etiquetadas en formato `.dta`.
 * `scripts/`: Códigos de Stata (`.do`) diseñados para la limpieza, el cruce automático de bases y la visualización.
 * `graficos/`: Salidas visuales en formato `.png` listas para documentación.
