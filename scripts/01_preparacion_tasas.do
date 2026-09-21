@@ -1,9 +1,8 @@
 * ==============================================================================
-* Proyecto: Impacto de Tasas de Interés BCRP vs FED
 * Script: 01_preparacion_tasas.do
 * ==============================================================================
 
-* 1. Configurar el directorio principal (Quien use el código cambiará esta ruta)
+* 1. Configurar el directorio principal (Quien use el código cambie esta ruta)
 * cd "C:/Ruta/A/Tu/Carpeta/Principal" 
 
 * ------------------------------------------------------------------------------
