@@ -10,14 +10,14 @@
 * ------------------------------------------------------------------------------
 import excel "data_cruda/DFEDTARU.xlsx", sheet(Monthly) firstrow clear
 
-* Convertir la fecha de la Fed (texto) a formato mensual numérico de Stata
-gen fecha_temp = date(observation_date, "DMY")
-gen fecha = mofd(fecha_temp)
+* Stata ya lee 'observation_date' como fecha diaria numérica (%td), 
+* así que pasamos directo a extraer el mes:
+gen fecha = mofd(observation_date)
 format fecha %tmMon_CCYY
 
 * Renombrar y guardar temporalmente para poder cruzarla
 rename DFEDTARU tasa_fed
-drop observation_date fecha_temp
+drop observation_date
 save "data_tratada/fed_temp.dta", replace
 
 * ------------------------------------------------------------------------------
